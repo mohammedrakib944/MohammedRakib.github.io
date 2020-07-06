@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(22, 22, 22);
+}
+a{
+    letter-spacing: 0.5px;
+    font-size: 13px;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.container{
+    overflow: hidden;
+}
+.dotts{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+.dotts span:nth-child(1){
+    position: absolute;
+    width: 3px;
+    height: 75px;
+    background: linear-gradient(45deg,transparent,blue);
+    border-radius: 10px;
+}
+.dotts span:nth-child(2){
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(45deg,transparent,blue);
+    margin: 10px;
+    border-radius: 10px;
+}
+/* start navigatiion section */
+.navigation{
+    width: 100%;
+    background: rgb(27, 27, 27);
+    /* margin-top: -60px; */
+    transition: all 0.5s;
+}
+/* .newNav{
+    margin-top: 0px;
+    transition: all 0.5s;
+} */
+.navUl{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background: #191919;
+    padding: 20px;
+    margin-top:-60px;
+    box-shadow: 0px 2px 10px #0c0c0c;
+    z-index: 10;
+}
+.newnavUl{
+    margin-top: 0px;
+}
+
+.navigation ul li{
+    list-style: none;
+}
+.navigation ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #c3c3c3;
+    text-transform: uppercase;
+}
+.navigation ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+/* menu section */
+
+
+
+.main-menu{
+    width: 100%;
+}
+.main-menu ul{
+    margin-bottom: 100px;
+}
+.main-menu ul li{
+    margin-bottom: 20px;;
+}
+.main-menu ul li a{
+    color: rgb(187, 187, 187);
+}
+ .main-menu ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.menu-btn-work {
+    margin-top: 100px;
+    width: 100%;
+    color: #2196f3;
+    border-radius: 5px;
+    background: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    border: 1px solid;
+    letter-spacing: 0.5px;
+}
+.menu-btn-work:hover{
+    color: #fff;
+}
+/* end menu-section */
+
+/* start landing section */
+#landing{
+    width: 100%;
+    height: 100vh;
+    /* background: url(img/rakib.jpg)right no-repeat; */
+    background-size: contain;
+    background-color: #000;
+}
+/* #landing{
+    width: 100%;
+    height: 100vh;
+    background:#000;
+} */
+
+
+/* upper-landing */
+.upprer-landing{
+    width: 100%;
+    height: 60vh;
+    background: url(img/rakib.jpg)center no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 60px;
+    position: relative;
+    transition: 1s;
+}
+
+.designer{
+    width: 50%;
+    /* height: 54vh; */
+    border-radius: 50%;
+    position: relative;
+    color: rgb(123, 123, 123);
+}
+
+.designer img{
+    width: 98px;
+    opacity: 0.6;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+
+.designer h3 {
+    width: 100%;
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-family: auto;
+    z-index: 3;
+}
+
+.developer {
+    width: 50%;
+    /* height: 54vh; */
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    color: rgb(123, 123, 123);
+    transition: 0.5s;
+}
+
+.developer img {
+    width:98px;
+    opacity: 0.5;
+    padding-right: 10px;
+    padding-top: 9px;
+}
+.developer h3{
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-family: auto;  
+    z-index: 3;
+}
+
+
+/* start lower landing */
+     
+.lower-landing{
+    width: 100%;
+    height: 30vh;
+    color: rgb(148, 148, 148);
+}
+.lower-landing p {
+    word-spacing: 3px;
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+.lower-landing h3 {
+    font-family: auto;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+    background: linear-gradient(60deg,#111,#111, #fff,#111,#111);
+    -webkit-background-clip:text;
+    color: transparent;
+    animation: animate 5s linear infinite;
+    background-size: 95%;
+}
+
+@keyframes animate{
+    0%{
+        background-position:-800%;
+    }
+    40%{
+        background-position: 800%;
+        color: rgb(182, 182, 182);
+    }
+    90%{
+        background-position: 800%;
+        color: rgb(160, 160, 160);
+    }
+    100%{
+        background-position: 800%;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.lower-landing a {
+    color: #2196F3;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.lower-landing a:hover{
+    color: rgb(95, 179, 248);
+    text-decoration: none;
+} 
+
+/* end landing section */
+.about-section{
+    width: 100%;
+    margin: 200px 0px;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.6s;
+}
+.newAboutSec{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.about-image{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.about-text{
+    width: 100%;
+    height: 100%;
+    /* transition: all 0.5s;
+    transform: translateX(150px);
+    line-height: 100px;
+    opacity: 0; */
+}
+/* .newAboutText{
+    transform: translateX(0px);
+    line-height: normal;
+    opacity: 1;
+} */
+.about-text h3{
+    letter-spacing: 0.5px;
+    width: 100%;
+    padding: 10px 0px;
+    color:rgb(161, 161, 161);
+}
+.uner-h3 {
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(45deg, blue, transparent);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.about-text h5{
+    color: rgb(151, 151, 151);
+    font-size: 16px;
+    padding: 10px 0px;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+.about-text p{
+    color: rgb(109, 109, 109);
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+/* start skill section */
+.skillSection h3{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: rgb(170, 170, 170);
+    margin-top: 100px;
+}
+.skillImg {
+    width: 100%;
+    padding: 100px 0px 50px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillImg img {
+    width: 90px;
+    opacity: 0.8;
+    margin: 5px 0px 5px 10px;
+}
+
+td {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    color: #a7a7a7;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: #2d2d2d;
+    margin: 20px;
+    border-radius: 10px;
+    width: 170px;
+    height: 160px;
+    box-shadow: 0px 0px 22px #000;
+    transition: all .5s;
+}
+td:hover {
+    box-shadow: 0px 0px 75px #008eff;
+}
+
+.emojiSection{
+    width: 100%;
+    padding: 100px 0px 0px;
+    background: black;
+    margin-top: 50px;
+}
+
+/* start work sliderSection */
+.workSlider{
+    width: 100%;
+    padding: 100px 0px 50px 0px;
+
+}
+
+/* start services section */
+
+.services{
+    width: 100%;
+    background:black;
+    padding:50px 0px;
+    margin-top: 100px;
+}
+.services h3{
+    width: 100%;
+    color: #d2d2d2;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 50px 0px 5px 0px;
+}
+.servs{
+    width: 100%;
+    min-height: 17rem;
+    margin-top: 100px;
+    overflow: hidden;
+    background: none;
+    border: 2px solid #252525;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.servs:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px #003eff;
+}
+.servs img{
+    width: 5rem;
+    margin: 10px;
+    opacity: 0.6;
+}
+.servs h4{
+    margin: 10px;
+    color: #217ff3;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.servs p{
+    width: 100%;
+    color: rgba(130, 130, 130, 0.867);
+    padding-left: 9px;
+    font-size: 14px;
+}
+
+/* testmonial section */
+.testimls{
+    width: 100%;
+    text-align: center;
+    margin:100px 0px 100px;
+}
+.testimls h3{
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #dedede;
+}
+.testimls img {
+    width: 100px;
+    margin-top: 80px;
+    overflow: hidden;
+    border: 2px solid #a7a7a7;
+    border-radius: 35%;
+    border-bottom-left-radius: 57px;
+    transform: rotate(5deg);
+}
+.testimls p{
+    color: #b9b9b9;
+    padding: 30px 100px;
+}
+
+/* start contact section */
+
+.contactSec {
+    width: 100%;
+    background: black;
+    color: #dedede;
+    padding: 100px 0px 100px 0px;
+}
+.contactSec h3{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #dedede;
+}
+.contact{
+    width: 100%;
+    margin-top: 80px;
+}
+.phnMali {
+    width: 100%;
+    text-align: center;
+    background: black;
+    margin-top:10px;
+    padding: 15px;
+    padding-top: 30px;
+}
+.phnMali p {
+    color: #2196f3;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding:50px 0px 80px 0px;
+}
+.footer a img{
+    width: 50px;
+    background: #2196f3;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.footer p{
+    margin-top: 20px;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+.footer h6{
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+
+/* responsive website design */
+@media (max-width:760px){
+    .navigation ul li a{
+        font-size: 9px;
+    }
+    .upprer-landing{
+        margin-top: 50px;
+        background: none;
+        height: 45%;
+    }
+    .developer img{
+        width: 75px;
+    }
+    .designer img{
+        width: 75px;
+    }
+    .designer h3{
+        font-size: 18px;
+    }
+    .developer h3{
+        font-size: 18px;
+    }
+    .lower-landing p{
+        letter-spacing: 1px;
+        color: #2196f3;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .lower-landing h3{
+        margin-bottom: 80px;
+        margin-top: 20px;
+    }
+    .about-section{
+        margin: 0px;
+    }
+    .about-text{
+        padding: 30px;
+    }
+    .newClock{
+        width: 270px !important;
+        height: 270px !important;
+    }
+    td{
+        display: block;
+    }
+    .slideshow-container{
+        max-width: 95% !important;
+    }
+    .workSlider h3{
+        padding: 20px;
+    }
+    .workSlider{
+        padding: 0px;
+        padding-top: 50px;
+    }
+    .servs{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    .testimls{
+        margin: 50px 0px;
+    }
+    .contact{
+        width: auto;
+    }
+}

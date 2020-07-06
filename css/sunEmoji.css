@@ -1,0 +1,83 @@
+.sunEmoji {
+    width: 100%;
+    padding: 0px 0px 100px 0px;
+    overflow: hidden;
+}
+.sunEmoji h3 {
+    width: 100%;
+    color: #d2d2d2;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+.face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #1f1f1f, #eaeaea);
+    box-shadow: inset 0px 0px 50px #151515, 0px 0px 60px #000000, 0px 0px 100px #000000;
+    border: 3px solid #1b1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: 0.5s;
+    margin-top: 150px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.newFace{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.face:hover {
+    box-shadow:inset 0px 0px 50px #dedede, 0px 0px 60px #ffffff, 0px 0px 100px #ffffff ;
+    border: 2px #fff;
+    transition: 1s;
+}
+.face::before{
+    content: '';
+    position: absolute;
+    top: 210px;
+    width: 150px;
+    height: 20px;
+    background: #161616;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.face:hover::before{
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: #161616;
+    border-radius: 0px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+.eyes{
+    position: relative;
+    top: -40px;
+    display: flex;
+}
+.eyes .eye{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: block;
+    background:radial-gradient(#ffffff, #b9b9b9);
+    margin: 0 15px;
+    border-radius: 50%;
+}
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(#03A9F4, #000000);
+    border-radius: 50%;
+}
